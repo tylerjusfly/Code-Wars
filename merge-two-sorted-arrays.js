@@ -36,12 +36,23 @@ Psudocode
 //     return concantenate.sort((a, b) => a - b)
   
 // }
-function mergeArrays(a, b) {
-  return [...new Set(a.concat(b))].sort((a,b)=>a-b)
-}
-console.log(mergeArrays(arr1, arr2))
 
+
+// function mergeArrays(a, b) {
+//   return [...new Set(a.concat(b))].sort((a,b)=>a-b)
+// }
+
+
+function mergeArrays(arr1, arr2) {
+  let res = [];
+  // checking if el is in res arr, push else 0
+  arr1.concat(arr2).forEach(el => !res.includes(el) ? res.push(el) : 0);
+  return res.sort( (a, b) => a - b);
+}
+
+console.log(mergeArrays(arr1, arr2))
 /* 
 * Used the array.concat()
 * Used the array.sort() function
+* Set()
 */
