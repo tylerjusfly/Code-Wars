@@ -24,18 +24,10 @@ Psudocode
 
 // function mergeArrays(arr1, arr2) {
 //     let concantenate = arr1.concat(arr2)
-//     for(let i = 0; i<concantenate.length; i++){
-//       for (let j = 0; j<concantenate.length; j++){
-//         if(i !== j){
 
-//         }
-
-//       }
-
-//     }
 //     return concantenate.sort((a, b) => a - b)
   
-// }
+// } this solution only concatenates and sorts
 
 
 // function mergeArrays(a, b) {
