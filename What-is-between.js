@@ -7,9 +7,14 @@ Complete the function that takes two integers (a, b, where a < b) and return an 
   (1, 4) => {
     return [1, 2, 3, 4]
   }
+  const between = (a, b) => {
+  let res = []
+  for(let i = a; i <= b; i++) {
+    res.push(i);   
+  }  
+  return res;
+}
   */
- let a = 1
- let b = 4
 
 /* Psudocode
   create an empty array 
