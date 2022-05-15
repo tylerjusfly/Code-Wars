@@ -11,7 +11,7 @@ C...m returns 'Caught!' <-- as there are three characters between the two, the c
 /*
 PREP
 Parameter = receives a string (C....m)
-Returns = 
+Returns = Caught or Escaped
 Psudocode = check the index of each letter in the string and retun escaped if the space/index btw them is more than 3.
 Index starts from zero, so you have to deduct 1 before doing an if else check.
 */
