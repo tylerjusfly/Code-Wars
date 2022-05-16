@@ -20,6 +20,7 @@ function catMouse(x){
   return x.indexOf('m') - x.indexOf('C') - 1 > 3 ? 'Escaped!' : 'Caught!';
 }
 
+
 // Test Cases
-console.log(catMouse('C...m'))
-console.log(catMouse('C.....m'))
+console.log(catMouse('C...m.'))
+// console.log(catMouse('C.....m'))
