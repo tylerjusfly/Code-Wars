@@ -11,8 +11,8 @@ function last(x){
         the given string.
      *  E ("hello world") => [world, hello], ("i am a boy") => [a, i, am, boy]
      *  P *split string and convert to array.
-        * loop through each letter in array and get last chracter
-        * sort character and join back other letters
+        * sort last letter by charcode 
+        * 
     */
       let toArray = x.split(' ').sort(function (a, b) {
         return a.charCodeAt(a.length -1) - b.charCodeAt(b.length - 1)   
