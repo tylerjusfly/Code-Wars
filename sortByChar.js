@@ -4,7 +4,7 @@ If two words have the same last letter, they returned array should show them in 
 All inputs will be valid.
 */
 
-function last(x){
+function last(words){
     /*  P ACCEPTS STRINGS
      * R returns a sorted array of string, sorted by the last letter in a each words
         if two words have same letter, should maintain the order they appeared in,
@@ -14,11 +14,19 @@ function last(x){
         * sort last letter by charcode 
         * 
     */
-      let toArray = x.split(' ').sort(function (a, b) {
-        return a.charCodeAt(a.length -1) - b.charCodeAt(b.length - 1)   
+      // let toArray = x.split(' ').sort(function (a, b) {
+      //   return a.charCodeAt(a.length -1) - b.charCodeAt(b.length - 1)   
+      // })
+
+      // return toArray
+      let split = words.split(' ').sort((a, b) => {
+        return a.slice(-1).localeCompare(b.slice(-1))
       })
 
-      return toArray
+      return split
+      
     
     }
+
+    
     console.log(last('man i need a taxi up to ubud'))

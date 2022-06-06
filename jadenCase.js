@@ -9,18 +9,6 @@ Your task is to convert strings to how they would be written by Jaden Smith. The
   };
 
 let str = "How can mirrors be real if our eyes aren't real"
-// function rec(str){
-// //   P Receiving Strings
-// //   R Returning Camel cases
-// //   E ("How can mirrors be real if our eyes aren't real") => 
-// //   "How Can Mirrors Be Real If Our Eyes Aren't Real"  
-// //   P
-//    let splitToArray = str.split(' ')
-//   for(let i = 0; i < splitToArray.length; i++){
-//     let index = splitToArray[i]
-//     let arr = splitToArray[i][0].toUpperCase() + index.slice(1)
-//      console.log(arr)
-//   }
-// }
+
 
 console.log(str.toJadenCase())
