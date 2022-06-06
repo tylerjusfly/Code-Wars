@@ -13,14 +13,17 @@ function fakeBin(x){
     // then check if each digit >  or < than 5 
     //  if true or false change it to 0 or 1
 
-    let m = x.split('').map(xx =>{
-      if (xx < 5){
-         xx = 0
-      }
-      else{ xx = 1}
-      return xx
-    })
-    return m.join('')
+    // let m = x.split('').map(xx =>{
+    //   if (xx < 5){
+    //      xx = 0
+    //   }
+    //   else{ xx = 1}
+    //   return xx
+    // })
+    // return m.join('')
+
+    // Codewars mode!!
+    return x.split('').map(xx => xx < 5 ? xx = 0 : xx = 1).join('')
   
   }
 
