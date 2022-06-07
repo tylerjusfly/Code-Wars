@@ -49,11 +49,11 @@ function greetDevelopers(list) {
   //   return list and get the firstname key and language key to create 
   //   a new greeting key inside the object
     
-    const map = list.map( dev => (
-        { 
-        ...dev,  
-        greeting: `Hi ${dev.firstName}, what do you like the most about ${dev.language}?`
-    }))
+    const map = list.map( dev => {
+        return {...dev, 
+                greeting: `Hi ${dev.firstName}, what do you like the most about ${dev.language}?`
+            }
+    })
     return map
   }
 
