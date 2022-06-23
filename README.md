@@ -1,5 +1,5 @@
 # DAILY CODE WARS
-May 11 of 2022, i pledged to always solve and push 1 solved codewars challenge, first thing in the morning.
+Solutions to Codewars that I've completed, the instructions, my thought process before solving, the solution I came up with, and the test cases provided. 
 
 ## Lessons Learned:
 You can't live your day like an accident and expect to be a beast.
