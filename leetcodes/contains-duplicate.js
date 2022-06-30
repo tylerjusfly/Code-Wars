@@ -28,8 +28,6 @@ Constraints:
 
 */
 
-
-
 const containsDuplicate = function(nums) {
 //     //     P - receivimg an array of numbers
 // //     R - returning a boolean if multiple numbers exist in the array
@@ -60,3 +58,28 @@ const num2 = [1,4,2,1]
 const num3 = [2,14,18,22,22]
 
 console.log(containsDuplicate(num3))
+
+/* ===== Jacob Asper code
+
+Pseudo = if value of nums[i] is the obj hash map is undefined, 
+add or set the key to nums[i] with a value of anything/true =>  obj[nums[i]] = true
+else if the value is not equals undefined , return true 
+
+const containsDuplicate = function (nums) {
+	const obj = {}
+	for (let i = 0; i < nums.length; i++) {
+		// if the number does not exist in the array, define it (the value is arbitrary, but I chose "whatever you want" here—anything that isn't undefined should work
+		if (obj[nums[i]] === undefined) {
+			obj[nums[i]] = "whatever you want"
+		}
+		// else if the key already exists in the hashmap, return true
+		else {
+			return true
+		}
+	}
+	//return false if no duplicates are found
+	return false
+};
+
+
+*/
