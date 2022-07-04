@@ -20,14 +20,13 @@ All arrays or lists will always have at least one element, so you don't need to 
 
 
 function minMax(arr){
-    //   P => receiving arrays of number
-    //   R => returning the minimum and maximum of the array
-    //   E => [1,2,3,4] => [1,4]
-    //   P => checking the array if for each number looped is < the currnet num
-    //   if true set lower num to an array , 
-    //   then you check if the first num is ?> than all num in the array
-      let low = Math.min(...arr)
-      let high = Math.max(...arr)
-      return [low, high]
-      
-    }
+  //   retuning both minimum and  max of an array.
+  //   let make use of the Math.min and Max.max method
+  //   we get the max out store it in a variable and get min out ,
+  //   store it in a variable then return the back into an array.
+  //   spread it , else you get a NAN
+    const min = Math.min(...arr)
+    const max = Math.max(...arr)
+    //console.log(max)
+    return [min ,max]; // fix me!
+  }
